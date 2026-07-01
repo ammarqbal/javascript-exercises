@@ -1,5 +1,12 @@
-const reverseString = function() {
-
+const reverseString = function (input) {
+  if (input === "") {
+    return "";
+  }
+  let output = String("");
+  for (let i = input.length - 1; i >= 0; i--) {
+    output += input[i];
+  }
+  return output;
 };
 
 // Do not edit below this line
